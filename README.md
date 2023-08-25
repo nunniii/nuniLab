@@ -58,7 +58,7 @@ Vamos começar compreendendo o que de fato, é um algoritmo:
 
 Por exemplo, podemos criar um algoritmo que inverte a sequência de uma lista:
 
-```
+```python
 def InverterLista(lista):
     tamanhoDaLista = len(lista)
     metadeDoTamanhoDaLista = tamanhoDaLista//2
@@ -97,7 +97,7 @@ Se a entrada:
 a entrada é um número primo
 ```
 Este algorítmo, em Python se assemelha com isto:
-```
+```python
 def fun1(n):
     if n > 1:
         for i in range(2, n - 1):
@@ -115,7 +115,7 @@ Observe aqui, que no pior caso, a função `fun1` executará um total de `(n - 2
 
 Já nesta solução, a estrutura de código é idêntica, porém o intervalo de verificação do laço é bem menor, pois o mesmo verifica se cada número de 2 até a raíz quadrada da entrada é divisor da entrada e a expressão `√x < x` é verdadeira. (Matematicamente, este método também é válido).
 
-``` 
+```python
 import math
 def fun2(n):
     if n > 1:
