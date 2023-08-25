@@ -6,19 +6,21 @@
 **[➡️./c/](./c/) é uma representação básica de como os operadores lógicos agem no nível da ULA.**
 
 ```rust
+// (false, true) = (0, 1)
+
 // AND
 fn and(n1:u8, n2:u8) -> u8 {
-    return n1 * n2;
+    return n1 * n2; // Retorna 0b0 se qualquer dos argumentos for 0b0.
 }
 
 // OR
 fn or(n1:u8, n2:u8) -> u8 {
-    return n1 + n2;
+    return n1 + n2; // Retorna 0b1 se qualquer dos argumentos for 0b1.
 }
 
 // NOT
 fn not(n:u8) -> u8 {
-    return 1 - n;
+    return 1 - n; // Retorna 0b0 caso o argumento seja 0b1, e portanto, retorna 0b1 caso o argumento seja 0b0.
 }
 
 
